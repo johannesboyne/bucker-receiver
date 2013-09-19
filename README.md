@@ -6,16 +6,14 @@ A simple logging service for the simple [bucker](https://github.com/nlf/bucker) 
 Usage
 =====
 
-This is a drop in thing. You can just start the server be running:
-```
-node index.js
-```
-inside the bucker-receiver folder, or by requiring it inside your main application
+This is a drop in thing. You can just start the server by running `node index.js` inside the bucker-receiver folder, or by requiring it inside your main application
+
 ```javascript
 // ...
 require('bucker-receiver');
 // ...
 ```
+
 it will automatically start a new http-server instance. Then it is possible to call the configured endpoint from a frontend application (html / curl / it's up to you) to send front-end logs to the receiver:
 
 #### Curl Example
@@ -30,6 +28,8 @@ $ curl http://localhost:1337 \
 ```
 
 #### HTML Example
+
+Requesting anything via `GET` from `bucker-receiver` will cause the receiver to answer with an front-end javascript library to use bucker on client side js/html apps.
 
 ```html
 <html>
