@@ -6,6 +6,12 @@ var http    = require('http');
 var brc     = require('./brc');
 var logger  = require('bucker').createLogger(brc);
 
+// check if brc config is O.K
+if (!brc.hasOwnProperty('receiver') || !brc.receiver.port || !brc.receiver.endpoint) {
+  logger.error('Your provided brc.json is corrupt!');
+  process.exit(1);
+}
+
 // HTTP Server
 // -----------
 // If you want to use https, use a proxy infront :) this one has one (!) single use cas

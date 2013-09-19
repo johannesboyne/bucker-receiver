@@ -47,3 +47,16 @@ bucker.log("test"); // this will be logged to the bucker-receiver
 
 Use the `brc.json` to configure `bucker-receiver`. `brc.json` will be used to configure [bucker](https://github.com/nlf/bucker) and to configure `bucker-receiver` as well. Goto [bucker](https://github.com/nlf/bucker) to read more about it's configuration.
 
+You have to provide a receiver parameter thus `bucker-receiver` can run: 
+
+```json
+{
+  "console": {
+    "color": true
+  },
+  "receiver": {
+    "port": 1337,
+    "endpoint": "localhost"
+  }
+}
+```
