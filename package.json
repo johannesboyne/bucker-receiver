@@ -1,0 +1,22 @@
+{
+  "name": "bucker-receiver",
+  "version": "0.0.1",
+  "description": "A minimal receiver (server) for front-end bucker logs. Simple but useful!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "bucker",
+    "log",
+    "server",
+    "logging",
+    "front-end",
+    "logs"
+  ],
+  "author": "Johannes Boyne <johannes@boyne.de>",
+  "license": "MIT",
+  "dependencies": {
+    "bucker": "~0.6.3"
+  }
+}

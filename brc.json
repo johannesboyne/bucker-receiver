@@ -1,0 +1,9 @@
+{
+  "console": {
+    "color": true
+  },
+  "receiver": {
+    "port": 1337,
+    "endpoint": "localhost"
+  }
+}
