@@ -60,3 +60,7 @@ You have to provide a receiver parameter thus `bucker-receiver` can run:
   }
 }
 ```
+
+# Be Careful!!!
+
+Attackers are able to log stupid stuff to your system! Be clever and aply security mechanisms! 
